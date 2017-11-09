@@ -16,16 +16,18 @@
 
 int main()
 {
+    char c;
     char choice;
 
     printf("==================================================\n");
     printf("**    WELCOME TO KATIE & LISA'S CD DATABASE!!   **\n");
     printf("==================================================\n");
 
-    while(choice != 'x' || choice != 'X')
+    while(choice != 'x' && choice != 'X')
     {
 	menu();
-	choice = getchar();
+	choice = getchar();	
+	getchar();
 
 	switch(choice)
 	{
