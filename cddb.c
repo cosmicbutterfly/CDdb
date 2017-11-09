@@ -46,6 +46,7 @@ int main()
 	   case 'v':
 	   case 'V':
 		view();
+		break;
 	   case 'x':
 	   case 'X':
 		printf("Goodbye!\n");

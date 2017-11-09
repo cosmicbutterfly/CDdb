@@ -23,10 +23,11 @@ void view()
     printf("**             THE MASTER DATABASE              **\n");
     printf("==================================================\n");
 
-    while(c != 'x' || c != 'X')
+    while(c != 'x' && c != 'X')
     {
 	viewmenu();
 	c = getchar();
+	getchar();
 
 	switch(c)
 	{
@@ -51,9 +52,13 @@ void view()
 		break;
 	   case 'k':
 	   case 'K':
-		view_k();
+		view_k(); 
+		break;
 	   case 'x':
 	   case 'X':
+	        printf("==================================================\n");
+ 	        printf("**                   MAIN MENU                  **\n");
+   	        printf("==================================================\n");
 		break;
 	   default:
 		printf("Invalid input.\n");
