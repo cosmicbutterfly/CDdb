@@ -4,14 +4,15 @@
 //
 // 11/8/2017
 
-#include <stdlib>
-#include <stdio>
+#include <stdlib.h>
+#include <stdio.h>
 #include <string.h>
 
 #include "menu.h"
 #include "add.h"
-#include "remove.h"
+#include "rem.h"
 #include "modify.h"
+#include "view.h"
 
 int main()
 {
@@ -34,20 +35,23 @@ int main()
 		break;
 	   case 'r':
 	   case 'R':
-		remove();
+		rem();
 		break;
 	   case 'm':
 	   case 'M':
-		modify():
+		modify();
 		break;
+	   case 'v':
+	   case 'V':
+		view();
 	   case 'x':
 	   case 'X':
 		printf("Goodbye!\n");
 		break;
 	   default:
 		printf("Invalid input.\n");
-	}
+	};
     };
 
-    return 0:
+    return 0;
 };
